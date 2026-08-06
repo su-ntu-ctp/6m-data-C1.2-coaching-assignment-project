@@ -1,5 +1,23 @@
 # Module 1 Assignment Project – Singapore Jobs Analytics
 
+# Group-self discussion #
+1)	Cleaning of data.
+-	Removing empty rows
+-	Deleted two columns (‘occupationId’, ‘status_id’)
+-	Removing duplicates - What criteria do you consider duplicate?
+o	Check if all values except for job ID is identical. 
+o	Let me know if you disocover something else. 
+-	Removing anomalous data (unreasonable values for salary, min years of experience = 80)
+
+2)	Problem Statement (important)
+-	Analyze overall trends in different sectors?
+-	Benchmark salary?
+
+3)	Graphs/Tables to plot
+-	TBA, adjust according to use case (with inputs from all of us.)
+
+--- 
+
 Design a simple data product (dashboard or web app) using a real-world CSV of Singapore job postings (~1M+ rows). Your goal is to solve a clear business problem for a specific user group using insights from the data.
 
 > **This looks big. It isn't** — it's every small skill from Module 1, chained together: loading data, cleaning it, exploring it, and showing what you found. Follow the milestones below and you'll be fine.
@@ -152,3 +170,117 @@ Focus on a **coherent story** from business question → data process → dashbo
 **To pass:** a working dashboard with at least one overview view and one drill-down, tied to a stated business question.
 
 **Working in teams:** [Team size: X — confirm with your instructor]. The presentation is assessed as a team; your commit history is assessed individually — so push your own work under your own GitHub account.
+
+
+
+``` actual Readme file starts here?```
+
+# Singapore Jobs Analytics Data Product
+
+## Overview
+
+This project analyses more than 1 million Singapore job postings to provide interactive insights into salaries, hiring demand, competition and hiring trends.
+
+The dashboard enables users to explore the Singapore labour market through dynamic filters and visualisations.
+
+---
+
+## Dataset
+
+The dataset contains Singapore job postings with information including:
+
+- job title
+- company name
+- employment type
+- salary range
+- experience requirements
+- job categories
+- number of applications
+- number of views
+- repost information
+
+The original dataset contains approximately 1 million job postings.
+
+---
+
+## Project Structure
+
+```
+.
+├── .vscode/
+│   └── settings.json            # VS Code project settings
+│
+├── dashboard/
+│   ├── app.py                   # Streamlit dashboard application
+│   └── requirements.txt         # Python dependencies
+│
+├── .gitignore                   # Files excluded from Git tracking
+├── README.md                    # Project documentation
+└── main.ipynb                   # Data cleaning and preprocessing notebook
+```
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Plotly
+* Streamlit
+* Jupyter Notebook
+
+---
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+cd <repository-name>
+```
+
+### 2. Install required packages
+
+Run:
+
+```bash
+pip install -r dashboard/requirements.txt
+```
+
+### 3. Run the Streamlit dashboard
+
+Run:
+
+```bash
+streamlit run dashboard/app.py
+```
+
+The dashboard will open in your browser.
+
+---
+
+## Dashboard Features
+
+* KPI summary cards
+* Salary analysis
+* Hiring demand analysis
+* Application analysis
+* Hard-to-fill industry analysis
+* Hiring trends over time
+* Interactive filters
+* Searchable job postings table
+
+---
+
+## Team Members
+
+* Gary
+* Shabeenah
+* Mustafa
+* Michael
+* Wee Lee
+* Belina
+
+
