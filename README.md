@@ -158,7 +158,7 @@ Focus on a **coherent story** from business question → data process → dashbo
 
 
 
-``` actual Readme file starts here?```
+---
 
 # Singapore Jobs Analytics Data Product
 
@@ -172,7 +172,7 @@ The dashboard enables users to explore the Singapore labour market through dynam
 
 ## Dataset
 
-The dataset contains Singapore job postings with information including:
+The dataset contains historical Singapore job postings with information including:
 
 - job title
 - company name
@@ -182,9 +182,15 @@ The dataset contains Singapore job postings with information including:
 - job categories
 - number of applications
 - number of views
+- number of vacancies
 - repost information
+- position levels
+- posting dates
+- job status
 
 The original dataset contains approximately 1 million job postings.
+
+Before dashboard development, the dataset was cleaned and prepared by removing duplicate records, handling missing values, standardising text fields, correcting data types, and removing unrealistic salary and experience values.
 
 ---
 
@@ -201,7 +207,10 @@ The original dataset contains approximately 1 million job postings.
 │
 ├── .gitignore                   # Files excluded from Git tracking
 ├── README.md                    # Project documentation
-└── main.ipynb                   # Data cleaning and preprocessing notebook
+├── Singapore_Job_Market_Intelligence.pptx # Project presentation
+├── main.ipynb                   # Data cleaning and preprocessing notebook
+└── report.md                    # Project report and analysis documentation
+
 ```
 
 ---
@@ -222,8 +231,8 @@ The original dataset contains approximately 1 million job postings.
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/greygalarhadt8462/6m-data-C1.2-coaching-assignment-project.git
+cd 6m-data-C1.2-coaching-assignment-project
 ```
 
 ### 2. Install required packages
@@ -248,24 +257,38 @@ The dashboard will open in your browser.
 
 ## Dashboard Features
 
-* KPI summary cards
-* Salary analysis
-* Hiring demand analysis
-* Application analysis
-* Hard-to-fill industry analysis
+* Job market summary metrics
+* Average salary analysis by category
+* Hiring demand based on total vacancies
+* Job application and competition analysis
+* Total repost count by category
+* Position level and employment type breakdowns
 * Hiring trends over time
 * Interactive filters
 * Searchable job postings table
+
+Users can filter job postings by:
+
+* Salary
+* Category
+* Employment type
+* Position level
+* Minimum years experience
+* Job status
+* Posted on behalf
+* Time Range
+
+The hiring trend can also be viewed by Year/Month or Year/Quarter.
 
 ---
 
 ## Team Members
 
-* Gary
-* Shabeenah
-* Mustafa
-* Michael
-* Wee Lee
-* Belina
+* Gary Ong
+* Shabeena Parvin
+* Mustafa Sarshaar
+* Kik Wee Lee 
+* Liew Hon Seng
+* Belina Poh
 
 
