@@ -1,0 +1,8 @@
+SGJobData.csv
+SGJobData_cleaned.csv
+SGJobData_whitespace_cleaned.csv
+*.csv
+
+__pycache__/
+*.pyc
+.DS_Store
